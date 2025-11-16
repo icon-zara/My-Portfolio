@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:white;
+            font-style: normal;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:0;
+        }
+        .navigation{
+            background-color: white ;
+            text-align: center;
+            padding:15px;
+        }
+        .navigation a{
+            color:rgb(235, 5, 147);
+            text-decoration: none;
+            margin:0 20px;
+            font-weight: bold;
+        }
+        .main{
+            background:linear-gradient(to left ,blue, rgb(92, 92, 255));
+            color:white;
+            text-align: center;
+            padding: 45px 15px;            
+        }
+        .main h1{
+            font-size: 50px;
+            margin:0 ;
+        }
+        .Me{
+          padding: 50px 20px;
+          text-align: center;
+          background:linear-gradient(45deg,#f093fb,#f5576c,#4facfe);
+          background-size: 300% 300%;
+          animation: gradientmove 5s ease infinite;
+        }
+        @keyframes gradientmove {
+            0%  { 
+                background-position: 0% 50%;
+            }
+            50% { 
+                background-position: 100% 50%;
+            }
+            100% { 
+                background-position: 0% 50%;
+            }
+        }
+        .Me h1{
+          margin-bottom: 25px; 
+        }
+        .zara{
+          width: 150px;
+          height: 150px;
+          margin: 0 auto 15px;
+          background: linear-gradient(to right, pink, rgb(154, 252, 255));
+          border-radius: 15px;
+          font-size: 50px;
+          font-weight: bold;
+          color:black;
+          line-height: 150px;
+        }
+        .blog{
+          text-align: center;
+          padding: 50px 20px;  
+        }
+        .blog h1{
+          margin-bottom: 30px;
+          font-size: 40px;
+        }
+        .projects{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            gap: 30px;
+        }
+        .card{
+            background:linear-gradient(to right, pink, rgb(224, 214, 214));
+            border-radius: 15px ;
+            font-family:Arial, Helvetica, sans-serif;
+            width: 350px;
+            padding:20px; 
+        }
+        .meta{
+            background:linear-gradient(145deg, rgb(42, 42, 213),rgb(228, 144, 158));
+            color:white;
+            text-align: center;
+            padding: 50px 15px;
+        }
+        .meta h1{
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .meta p{
+            font-size: 20px;
+            margin:10px;
+            display: inline-block;
+            border-radius: 15px;
+            background: rgba(217, 217, 217, 0.162);
+            padding:15px;
+        }
+        .foot{
+            background-color: rgb(91, 91, 91) ;
+            color:white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .brew{
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .brew:hover{
+            transform: scale(1.1);
+            background-color: #70027d;
+        }
+  
+    </style>
+</head>
+<body>
+    <div id="navbar" class="navigation">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <div id="Home" class="main">
+        <h1> Welcome to my portfolio </h1>
+        <p> Hi I am Zara and I want to be a web developer. I am 12 years old.</p>
+    </div>
+    <div id="About" class="Me">
+        <h1> About Me </h1>
+        <div class="zara"> Z </div>
+        <p> I am Zara and I like to do coding, singing and dancing.</p>
+    </div>
+    <div id="Projects" class="blog"> 
+        <h1> Projects</h1>
+        <div class="projects">
+        <div class="card">
+            <h2> Project 1 - Brewmaster</h2>
+            <p> An online website about Handcrafted coffee.</p>
+            <a href=" https://icon-zara.github.io/Brewmaster/" target="_blank" class="brew">Click here</a>
+        </div>
+        <div class="card">
+            <h2> Project 2 - Discover the Planets</h2>
+            <p> This website shows different types of planets and some information about them.</p>
+        </div>
+        <div class="card">
+            <h2> Project 3 - A blog website</h2>
+            <p> A website for publishing and managing blog articles.</p>
+        </div>
+      </div>
+    </div>
+    <div id="Services" class="blog">
+        <h1> Services</h1>
+        <div class="projects">
+        <div class="card">
+            <h2> Web design</h2>
+            <p> Mordern and responsive websites for buisnesses and individuals</p>
+        </div>
+        <div class="card">
+            <h2> Front-end developement</h2>
+            <p> Building responsive and clean interfaces or webpages</p>
+        </div>
+        <div class="card">
+            <h2> Website optimization</h2>
+            <p>Improving websites performance and SEO ranking.</p>
+        </div>
+      </div>
+    </div>
+    <div id="Contact" class="meta">
+        <h1> Contact Me</h1>
+        <p> 987654xxxx</p>
+        <p> xxx@gmail.com</p>
+    </div>
+    <div id="footer" class="foot">
+        <p> © 2025 Zara</p>
+    </div>
+</body>
+</html>
